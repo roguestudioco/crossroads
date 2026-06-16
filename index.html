@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crossroads Community Church — Brand Direction Brief | ROGUE Design Studio</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:wght@300;400;600;700;800&family=Lora:ital,wght@0,500;0,600;1,400&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --rogue-dark: #0e2d20;
+  --rogue-lime: #b0eb00;
+  --rogue-neutral: #c4c4c0;
+  --rogue-cream: #fbf9f7;
+  --rogue-cream2: #f2ede4;
+
+  /* Direction A: Rooted & Warm */
+  --a-primary: #2D5016;
+  --a-secondary: #8B4513;
+  --a-accent1: #C8A96E;
+  --a-accent2: #E8D5B0;
+  --a-neutral-light: #F5F0E8;
+  --a-neutral-dark: #1C2E0F;
+  --a-bg: #FDFAF4;
+
+  /* Direction B: Alive & Present */
+  --b-primary: #1A6B3C;
+  --b-secondary: #F4A024;
+  --b-accent1: #E8522A;
+  --b-accent2: #4A90A4;
+  --b-neutral-light: #F0F4F0;
+  --b-neutral-dark: #1A1A1A;
+  --b-bg: #FAFFF8;
+
+  /* Direction C: Still & Known */
+  --c-primary: #2C4A2E;
+  --c-secondary: #8FA888;
+  --c-accent1: #D4C5A9;
+  --c-accent2: #6B5B4E;
+  --c-neutral-light: #F7F5F2;
+  --c-neutral-dark: #1E1E1E;
+  --c-bg: #FEFEFE;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--rogue-cream);
+  color: #1a1a1a;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ─── HEADER ─── */
+header {
+  background: var(--rogue-dark);
+  color: white;
+  padding: 0;
+}
+.header-lime-bar {
+  height: 5px;
+  background: var(--rogue-lime);
+  width: 100%;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 48px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.rogue-wordmark {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--rogue-lime);
+  text-transform: uppercase;
+}
+.rogue-wordmark span {
+  color: white;
+  opacity: 0.5;
+  font-weight: 300;
+  font-size: 13px;
+  display: block;
+  letter-spacing: 0.08em;
+  margin-top: 2px;
+  text-transform: none;
+}
+.header-client {
+  text-align: right;
+}
+.header-client .client-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+.header-client .doc-type {
+  font-size: 12px;
+  color: var(--rogue-neutral);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* ─── INTRO ─── */
+.intro-section {
+  background: var(--rogue-dark);
+  padding: 48px 48px 56px;
+  color: white;
+}
+.intro-section h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(28px, 4vw, 46px);
+  font-weight: 900;
+  color: white;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  max-width: 760px;
+}
+.intro-section h1 em {
+  color: var(--rogue-lime);
+  font-style: normal;
+}
+.intro-section p {
+  font-size: 15px;
+  color: rgba(255,255,255,0.72);
+  max-width: 680px;
+  line-height: 1.75;
+  margin-bottom: 10px;
+}
+.constraint-note {
+  display: inline-block;
+  margin-top: 16px;
+  background: rgba(176,235,0,0.12);
+  border-left: 3px solid var(--rogue-lime);
+  padding: 10px 16px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.8);
+  border-radius: 0 4px 4px 0;
+}
+
+/* ─── TABS ─── */
+.tabs-wrapper {
+  background: var(--rogue-cream2);
+  padding: 0 48px;
+}
+.tab-nav {
+  display: flex;
+  gap: 4px;
+  border-bottom: 2px solid rgba(0,0,0,0.08);
+  overflow-x: auto;
+}
+.tab-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #888;
+  padding: 18px 24px;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  white-space: nowrap;
+  transition: color 0.2s, border-color 0.2s;
+}
+.tab-btn:hover { color: var(--rogue-dark); }
+.tab-btn.active { color: var(--rogue-dark); border-bottom-color: var(--rogue-lime); }
+
+/* ─── TAB CONTENT ─── */
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+.direction-panel { padding: 56px 48px; }
+
+.direction-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--rogue-neutral);
+  margin-bottom: 8px;
+}
+.direction-title {
+  font-size: clamp(30px, 4vw, 52px);
+  font-weight: 900;
+  line-height: 1.05;
+  margin-bottom: 16px;
+  color: var(--rogue-dark);
+}
+.strategy-statement {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #444;
+  max-width: 720px;
+  margin-bottom: 36px;
+  border-left: 4px solid var(--rogue-lime);
+  padding-left: 20px;
+}
+
+/* Mood pills */
+.mood-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 48px;
+}
+.mood-pill {
+  border: 1.5px solid currentColor;
+  border-radius: 100px;
+  padding: 6px 16px;
+  font-size: 12px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Section labels */
+.section-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--rogue-neutral);
+  margin-bottom: 16px;
+}
+
+/* Color palette */
+.palette-strip {
+  display: flex;
+  gap: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+}
+.swatch {
+  flex: 1;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px 12px;
+  min-width: 80px;
+}
+.swatch .hex {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 2px;
+}
+.swatch .name {
+  font-size: 10px;
+  opacity: 0.8;
+  display: block;
+  font-family: 'DM Sans', sans-serif;
+}
+.swatch.light .hex, .swatch.light .name { color: #333; }
+.swatch.dark .hex, .swatch.dark .name { color: rgba(255,255,255,0.9); }
+
+.palette-section { margin-bottom: 48px; }
+
+/* Typography specimen */
+.type-section { margin-bottom: 48px; }
+.type-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+@media (max-width: 768px) { .type-grid { grid-template-columns: 1fr; } }
+.type-card {
+  background: white;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+}
+.type-role {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--rogue-neutral);
+  margin-bottom: 12px;
+}
+.type-sample-heading { line-height: 1.1; }
+.type-sample-body { line-height: 1.65; font-size: 14px; }
+.type-sample-accent { line-height: 1.2; }
+.type-meta {
+  margin-top: 12px;
+  font-size: 11px;
+  color: #999;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Visual language */
+.vl-section { margin-bottom: 48px; }
+.vl-card {
+  background: white;
+  border-radius: 10px;
+  padding: 32px;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+}
+.vl-card p { font-size: 15px; color: #444; line-height: 1.8; }
+
+/* What it says */
+.says-card {
+  border-radius: 10px;
+  padding: 32px 36px;
+  margin-bottom: 48px;
+}
+.says-card h4 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.says-card p {
+  font-size: 17px;
+  line-height: 1.7;
+  font-weight: 500;
+}
+.best-for {
+  margin-top: 16px;
+  font-size: 13px;
+  opacity: 0.75;
+}
+
+/* ─── DIRECTION A COLORS ─── */
+#dir-a .direction-title { color: #1C2E0F; }
+#dir-a .mood-pill { color: #2D5016; border-color: #2D5016; }
+#dir-a .tab-btn { border-color: var(--a-primary); }
+#dir-a .says-card { background: #EFF5E6; }
+#dir-a .says-card h4 { color: #2D5016; }
+#dir-a .says-card p { color: #1C2E0F; }
+
+/* ─── DIRECTION B COLORS ─── */
+#dir-b .direction-title { color: #1A1A1A; }
+#dir-b .mood-pill { color: #1A6B3C; border-color: #1A6B3C; }
+#dir-b .says-card { background: #E8F7EE; }
+#dir-b .says-card h4 { color: #1A6B3C; }
+#dir-b .says-card p { color: #111; }
+
+/* ─── DIRECTION C COLORS ─── */
+#dir-c .direction-title { color: #1E1E1E; }
+#dir-c .mood-pill { color: #2C4A2E; border-color: #2C4A2E; }
+#dir-c .says-card { background: #F0EDE8; }
+#dir-c .says-card h4 { color: #2C4A2E; }
+#dir-c .says-card p { color: #1E1E1E; }
+
+/* ─── COMPARE TAB ─── */
+#dir-compare { padding: 56px 48px; }
+#dir-compare h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--rogue-dark);
+  margin-bottom: 8px;
+}
+#dir-compare .compare-sub {
+  color: #888;
+  font-size: 15px;
+  margin-bottom: 48px;
+}
+.compare-palettes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 56px;
+}
+@media (max-width: 768px) { .compare-palettes { grid-template-columns: 1fr; } }
+.compare-block h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--rogue-dark);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+.compare-palette-strip {
+  display: flex;
+  height: 56px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+.compare-swatch { flex: 1; }
+.compare-angle {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.type-compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 56px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+}
+.type-compare-table th {
+  background: var(--rogue-dark);
+  color: white;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 14px 20px;
+  text-align: left;
+}
+.type-compare-table td {
+  padding: 14px 20px;
+  font-size: 14px;
+  border-bottom: 1px solid #f0f0f0;
+  color: #333;
+  vertical-align: top;
+}
+.type-compare-table tr:last-child td { border-bottom: none; }
+.type-compare-table tr:nth-child(even) td { background: #fafafa; }
+.type-compare-table td:first-child {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #999;
+}
+
+/* ─── NOUN LIST ─── */
+.noun-section {
+  background: var(--rogue-dark);
+  padding: 72px 48px;
+  color: white;
+}
+.noun-section .section-header {
+  margin-bottom: 48px;
+}
+.noun-section .section-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(28px, 3.5vw, 44px);
+  font-weight: 900;
+  color: white;
+  margin-bottom: 10px;
+}
+.noun-section .section-header h2 em { color: var(--rogue-lime); font-style: normal; }
+.noun-section .section-header p {
+  color: rgba(255,255,255,0.6);
+  font-size: 14px;
+  max-width: 600px;
+  line-height: 1.7;
+}
+.noun-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+.noun-category {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  padding: 28px;
+}
+.noun-cat-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--rogue-lime);
+  margin-bottom: 16px;
+}
+.noun-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.noun-list li {
+  background: rgba(255,255,255,0.08);
+  border-radius: 6px;
+  padding: 5px 12px;
+  font-size: 13px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  color: rgba(255,255,255,0.85);
+}
+.noun-list li.unexpected {
+  background: rgba(176,235,0,0.12);
+  color: var(--rogue-lime);
+  border: 1px solid rgba(176,235,0,0.25);
+}
+.noun-usage-note {
+  margin-top: 40px;
+  background: rgba(176,235,0,0.08);
+  border-left: 3px solid var(--rogue-lime);
+  padding: 16px 20px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.7;
+  border-radius: 0 6px 6px 0;
+}
+
+/* ─── SEARCH PROMPTS ─── */
+.prompts-section {
+  background: var(--rogue-cream2);
+  padding: 72px 48px;
+}
+.prompts-section .section-header { margin-bottom: 48px; }
+.prompts-section .section-header h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(26px, 3.5vw, 40px);
+  font-weight: 900;
+  color: var(--rogue-dark);
+  margin-bottom: 10px;
+}
+.prompts-section .section-header p { color: #666; font-size: 14px; line-height: 1.7; max-width: 560px; }
+.prompt-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+.prompt-card {
+  background: white;
+  border-radius: 10px;
+  padding: 28px;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+}
+.prompt-card-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--rogue-dark);
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--rogue-lime);
+}
+.prompt-platform {
+  margin-bottom: 14px;
+}
+.prompt-platform-label {
+  font-size: 10px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--rogue-neutral);
+  margin-bottom: 6px;
+}
+.prompt-list {
+  list-style: none;
+}
+.prompt-list li {
+  font-size: 12px;
+  color: #444;
+  line-height: 1.5;
+  padding: 4px 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+.prompt-list li:last-child { border-bottom: none; }
+.prompt-list li::before {
+  content: '→ ';
+  color: var(--rogue-lime);
+  font-weight: 700;
+}
+
+/* ─── FOOTER ─── */
+footer {
+  background: var(--rogue-dark);
+  padding: 32px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.footer-wordmark {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--rogue-lime);
+  text-transform: uppercase;
+}
+.footer-url {
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+  font-family: 'DM Sans', sans-serif;
+}
+
+@media (max-width: 640px) {
+  .header-inner, .intro-section, .tabs-wrapper, .direction-panel,
+  #dir-compare, .noun-section, .prompts-section, footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .palette-strip { flex-wrap: wrap; }
+  .swatch { min-width: 60px; }
+  .tab-btn { padding: 14px 14px; font-size: 11px; }
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-lime-bar"></div>
+  <div class="header-inner">
+    <div class="rogue-wordmark">
+      ROGUE
+      <span>Design Studio</span>
+    </div>
+    <div class="header-client">
+      <div class="client-name">Crossroads Community Church</div>
+      <div class="doc-type">Brand Direction Brief — 2026</div>
+    </div>
+  </div>
+</header>
+
+<!-- INTRO -->
+<div class="intro-section">
+  <h1>Three directions.<br>One <em>real</em> identity.</h1>
+  <p>Crossroads has been in Statesboro for 103 years. But this brand shouldn't look like it. These visual directions are strategic hypotheses — not templates. Each one is built from what you told us: diverse, warm, rooted in identity over performance, and nothing that looks like the church down the road.</p>
+  <p>Each direction takes a different angle on the same truth. Study them with fresh eyes. The right one won't just look good — it'll feel like you.</p>
+  <div class="constraint-note">
+    ⚠️ Constraints honored: no heavy cross imagery, no corporate-church clichés, no color palettes that look like your neighbors, no performance-forward language. 103 years of history without looking dated.
+  </div>
+</div>
+
+<!-- TABS NAV -->
+<div class="tabs-wrapper">
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="showTab('dir-a', this)">Direction A: Rooted Warmth</button>
+    <button class="tab-btn" onclick="showTab('dir-b', this)">Direction B: Alive & Present</button>
+    <button class="tab-btn" onclick="showTab('dir-c', this)">Direction C: Still & Known</button>
+    <button class="tab-btn" onclick="showTab('dir-compare', this)">↔ Compare</button>
+  </div>
+</div>
+
+<!-- ═══ DIRECTION A ═══ -->
+<div id="dir-a" class="tab-content active" style="background: #FDFAF4;">
+  <div class="direction-panel">
+
+    <div class="direction-label">Direction A</div>
+    <div class="direction-title" style="font-family: 'Playfair Display', serif;">Rooted Warmth</div>
+    <div class="strategy-statement">
+      A 103-year-old church that's still <em>alive</em> — because it was built on something deeper than trend. This direction honors the weight of your history while leaning into the warmth and intimacy Zac described: the person who remembers your name, doesn't have an agenda, and sends you home feeling more like yourself. Deep earthy greens anchor the legacy. Amber and warm tan carry the welcome. Together: steady, genuine, not trying to impress you.
+    </div>
+
+    <div class="mood-row">
+      <span class="mood-pill">Rooted</span>
+      <span class="mood-pill">Genuine</span>
+      <span class="mood-pill">Warm</span>
+      <span class="mood-pill">Generational</span>
+      <span class="mood-pill">Unhurried</span>
+      <span class="mood-pill">Grounded</span>
+    </div>
+
+    <!-- Palette -->
+    <div class="palette-section">
+      <div class="section-label">Color Palette</div>
+      <div class="palette-strip">
+        <div class="swatch dark" style="background:#2D5016; flex:1.2;">
+          <span class="hex">#2D5016</span>
+          <span class="name">Old Grove</span>
+        </div>
+        <div class="swatch dark" style="background:#8B4513;">
+          <span class="hex">#8B4513</span>
+          <span class="name">Saddle Earth</span>
+        </div>
+        <div class="swatch dark" style="background:#C8A96E;">
+          <span class="hex">#C8A96E</span>
+          <span class="name">Wheat Light</span>
+        </div>
+        <div class="swatch light" style="background:#E8D5B0;">
+          <span class="hex">#E8D5B0</span>
+          <span class="name">Linen Gold</span>
+        </div>
+        <div class="swatch light" style="background:#F5F0E8;">
+          <span class="hex">#F5F0E8</span>
+          <span class="name">Warm Parchment</span>
+        </div>
+        <div class="swatch dark" style="background:#1C2E0F;">
+          <span class="hex">#1C2E0F</span>
+          <span class="name">Deep Root</span>
+        </div>
+        <div class="swatch light" style="background:#FDFAF4; border: 1px solid #e0ddd5;">
+          <span class="hex">#FDFAF4</span>
+          <span class="name">Canvas White</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Typography -->
+    <div class="type-section">
+      <div class="section-label">Typography</div>
+      <div class="type-grid">
+        <div class="type-card">
+          <div class="type-role">Heading</div>
+          <div class="type-sample-heading" style="font-family: 'Playfair Display', serif; font-size: 32px; color: #1C2E0F; font-weight: 900;">
+            Who you are matters more.
+          </div>
+          <div class="type-meta">Playfair Display 900 — Carries authority and depth. The kind of serif that's been around and earned it.</div>
+        </div>
+        <div class="type-card">
+          <div class="type-role">Body</div>
+          <div class="type-sample-body" style="font-family: 'Lora', serif; font-size: 15px; color: #3a3a3a;">
+            Statesboro is growing, and people are showing up exhausted. We're trying to help them stop chasing "enough" and find their identity in Christ instead.
+          </div>
+          <div class="type-meta">Lora Regular — Readable humanist serif. Warm without being precious.</div>
+        </div>
+        <div class="type-card">
+          <div class="type-role">Accent / Caption</div>
+          <div class="type-sample-accent" style="font-family: 'Space Grotesk', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #8B4513;">
+            Rooted in Christ. Overflowing in Statesboro.
+          </div>
+          <div class="type-meta">Space Grotesk — Clean contrast to the serifs. Labels, callouts, taglines.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Visual Language -->
+    <div class="vl-section">
+      <div class="section-label">Visual Language</div>
+      <div class="vl-card">
+        <p>Organic textures — worn wood grain, paper grain, natural linen patterns — layered subtly behind clean compositions. Photography should feel like Sunday morning candid, not stock photography: faces mid-conversation, hands holding coffee, natural light through windows. No posed group shots. Shapes lean circular and organic — the kind that feel like gathering, not geometry. Illustration style, if used, is hand-lettered and intentional. Patterns avoid symmetry. The overall feel is a well-loved book — not ragged, not pristine.</p>
+      </div>
+    </div>
+
+    <!-- What it says -->
+    <div class="says-card">
+      <h4>What This Communicates to Crossroads' Audience</h4>
+      <p>For the person who's exhausted from performing, this brand says: we've been here. We're not trying to impress you. Come as you are and stay as long as you need. The depth and age in these tones communicate that this isn't the new church in town — and that's not a weakness. That's the whole point.</p>
+      <p class="best-for" style="margin-top:12px; color: #555; font-size: 13px;">Best for: print collateral, welcome materials, signage, sermon series with historical or identity themes, legacy communications.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══ DIRECTION B ═══ -->
+<div id="dir-b" class="tab-content" style="background: #FAFFF8;">
+  <div class="direction-panel">
+
+    <div class="direction-label">Direction B</div>
+    <div class="direction-title" style="font-family: 'Raleway', sans-serif; font-weight: 800;">Alive & Present</div>
+    <div class="strategy-statement">
+      This direction captures what 130 salvations in 5 months actually looks like. It's kinetic, diverse, and full of life — built for a church where things are moving. Zac cited Canvas Church as an inspiration (they fully own their color). This direction applies that thinking to Crossroads: a bold green that's unmistakably yours, paired with a warm amber and a charged pop of terracotta. It's the energy of a city that doesn't know what to do with itself yet — and a church that does.
+    </div>
+
+    <div class="mood-row">
+      <span class="mood-pill">Kinetic</span>
+      <span class="mood-pill">Diverse</span>
+      <span class="mood-pill">Generous</span>
+      <span class="mood-pill">Alive</span>
+      <span class="mood-pill">Present</span>
+      <span class="mood-pill">Unstoppable</span>
+    </div>
+
+    <!-- Palette -->
+    <div class="palette-section">
+      <div class="section-label">Color Palette</div>
+      <div class="palette-strip">
+        <div class="swatch dark" style="background:#1A6B3C; flex:1.2;">
+          <span class="hex">#1A6B3C</span>
+          <span class="name">Crossroads Green</span>
+        </div>
+        <div class="swatch dark" style="background:#F4A024;">
+          <span class="hex">#F4A024</span>
+          <span class="name">Overflow Amber</span>
+        </div>
+        <div class="swatch dark" style="background:#E8522A;">
+          <span class="hex">#E8522A</span>
+          <span class="name">Terracotta Fire</span>
+        </div>
+        <div class="swatch dark" style="background:#4A90A4;">
+          <span class="hex">#4A90A4</span>
+          <span class="name">Still Water</span>
+        </div>
+        <div class="swatch light" style="background:#F0F4F0;">
+          <span class="hex">#F0F4F0</span>
+          <span class="name">Morning Mist</span>
+        </div>
+        <div class="swatch dark" style="background:#1A1A1A;">
+          <span class="hex">#1A1A1A</span>
+          <span class="name">Ink</span>
+        </div>
+        <div class="swatch light" style="background:#FAFFF8; border: 1px solid #dde8dd;">
+          <span class="hex">#FAFFF8</span>
+          <span class="name">Clean White</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Typography -->
+    <div class="type-section">
+      <div class="section-label">Typography</div>
+      <div class="type-grid">
+        <div class="type-card">
+          <div class="type-role">Heading</div>
+          <div class="type-sample-heading" style="font-family: 'Raleway', sans-serif; font-size: 34px; font-weight: 800; color: #1A1A1A; line-height: 1.05;">
+            Stop doing.<br>Start being.
+          </div>
+          <div class="type-meta">Raleway 800 — Bold, modern, strong letterform. Different enough to be ownable.</div>
+        </div>
+        <div class="type-card">
+          <div class="type-role">Body</div>
+          <div class="type-sample-body" style="font-family: 'DM Sans', sans-serif; font-size: 15px; color: #3a3a3a;">
+            We flip the focus. You don't have to do more to be enough. Start with being, and the doing follows. It's slow. It takes intention. But that's what we walk people through.
+          </div>
+          <div class="type-meta">DM Sans Regular — Clean, highly readable, no pretense. Pairs perfectly with bold display.</div>
+        </div>
+        <div class="type-card">
+          <div class="type-role">Accent / Caption</div>
+          <div class="type-sample-accent" style="font-family: 'Space Grotesk', sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #1A6B3C;">
+            Cultivating a diverse community.
+          </div>
+          <div class="type-meta">Space Grotesk — Technical precision. Perfect for labels, metadata, and callouts.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Visual Language -->
+    <div class="vl-section">
+      <div class="section-label">Visual Language</div>
+      <div class="vl-card">
+        <p>High-contrast, high-energy layout compositions — generous white space cut by bold color blocks. Photography should be real and diverse: multiple generations, ethnicities, contexts, shot candid and close. Grid systems that breathe but have clear rhythm. The green is always the anchor — it appears consistently enough that people recognize it across town without reading the name (the Canvas Church effect Zac admired). Amber and terracotta are used for energy, surprise, and emphasis. Blue is rare — used for moments of calm and depth. No gradients. No drop shadows. Flat, bold, confident.</p>
+      </div>
+    </div>
+
+    <!-- What it says -->
+    <div class="says-card">
+      <h4>What This Communicates to Crossroads' Audience</h4>
+      <p>For the college student who just moved to Statesboro, the young professional who's spiritually skeptical, the family new to town — this brand signals: we're not stiff, and we're not a club. The bold green is ownable and visible. It builds recognizability in a growing city without explaining itself. And the warmth of amber keeps it from feeling like a brand that's performing — which would be exactly wrong.</p>
+      <p class="best-for" style="margin-top:12px; color:#555; font-size:13px;">Best for: social media, apparel, event banners, digital ads, campus outreach, wayfinding systems, anything that needs to cut through noise.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══ DIRECTION C ═══ -->
+<div id="dir-c" class="tab-content" style="background: #FEFEFE;">
+  <div class="direction-panel">
+
+    <div class="direction-label">Direction C</div>
+    <div class="direction-title" style="font-family: 'Libre Baskerville', serif; font-weight: 700;">Still & Known</div>
+    <div class="strategy-statement">
+      The quietest direction — and potentially the most powerful. In a city growing faster than it knows what to do with, this brand doesn't shout. It doesn't have to. Muted, desaturated greens, warm sand, and deep earth tones build a visual system that feels like it belongs here — not like it arrived six months ago. It communicates permanence, depth, and welcome. You don't feel sold to. You feel seen. Church on the Move's approach to blending past and future — restrained but unmistakably intentional — anchors this direction.
+    </div>
+
+    <div class="mood-row">
+      <span class="mood-pill">Still</span>
+      <span class="mood-pill">Unhurried</span>
+      <span class="mood-pill">Permanent</span>
+      <span class="mood-pill">Seen</span>
+      <span class="mood-pill">Faithful</span>
+      <span class="mood-pill">Weightful</span>
+    </div>
+
+    <!-- Palette -->
+    <div class="palette-section">
+      <div class="section-label">Color Palette</div>
+      <div class="palette-strip">
+        <div class="swatch dark" style="background:#2C4A2E; flex:1.2;">
+          <span class="hex">#2C4A2E</span>
+          <span class="name">Forest Deep</span>
+        </div>
+        <div class="swatch dark" style="background:#8FA888;">
+          <span class="hex">#8FA888</span>
+          <span class="name">Sage Familiar</span>
+        </div>
+        <div class="swatch light" style="background:#D4C5A9;">
+          <span class="hex">#D4C5A9</span>
+          <span class="name">Sandstone</span>
+        </div>
+        <div class="swatch dark" style="background:#6B5B4E;">
+          <span class="hex">#6B5B4E</span>
+          <span class="name">Worn Oak</span>
+        </div>
+        <div class="swatch light" style="background:#F7F5F2;">
+          <span class="hex">#F7F5F2</span>
+          <span class="name">Aged Paper</span>
+        </div>
+        <div class="swatch dark" style="background:#1E1E1E;">
+          <span class="hex">#1E1E1E</span>
+          <span class="name">Near Black</span>
+        </div>
+        <div class="swatch light" style="background:#FEFEFE; border: 1px solid #e8e5e0;">
+          <span class="hex">#FEFEFE</span>
+          <span class="name">Pure</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Typography -->
+    <div class="type-section">
+      <div class="section-label">Typography</div>
+      <div class="type-grid">
+        <div class="type-card">
+          <div class="type-role">Heading</div>
+          <div class="type-sample-heading" style="font-family: 'Libre Baskerville', serif; font-size: 30px; font-weight: 700; color: #1E1E1E; line-height: 1.15; font-style: italic;">
+            Known before<br>you got here.
+          </div>
+          <div class="type-meta">Libre Baskerville Italic — Classic weight with an editorial lean. Speaks history, warmth, and depth simultaneously.</div>
+        </div>
+        <div class="type-card">
+          <div class="type-role">Body</div>
+          <div class="type-sample-body" style="font-family: 'DM Sans', sans-serif; font-size: 14px; color: #3a3a3a; font-weight: 300;">
+            We've been in Statesboro for 103 years. Not coasting. Not performing. Just walking with people from who they think they have to be toward who they actually are.
+          </div>
+          <div class="type-meta">DM Sans Light — Delicate contrast to the heavy heading. Creates breathing room and approachability.</div>
+        </div>
+        <div class="type-card">
+          <div class="type-role">Accent / Caption</div>
+          <div class="type-sample-accent" style="font-family: 'Space Grotesk', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #8FA888;">
+            Statesboro, Georgia · Est. 1923
+          </div>
+          <div class="type-meta">Space Grotesk — Grounding. Good for location lines, date stamps, and institutional text.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Visual Language -->
+    <div class="vl-section">
+      <div class="section-label">Visual Language</div>
+      <div class="vl-card">
+        <p>Restrained and editorial. Generous margins. Photography in desaturated or slightly warm-toned treatment — not filtered, not Instagram-bright. Real people in real light. Texture comes from paper and material choices, not digital noise. No busy patterns. The brand mark should be the loudest thing in any composition — everything else serves it. This is a system built to hold weight. Layouts are asymmetrical but intentional. When color appears, it means something. Signage, print, and apparel would all feel like they belong to the same quiet institution — which is exactly the recognizability Crossroads said they're after.</p>
+      </div>
+    </div>
+
+    <!-- What it says -->
+    <div class="says-card">
+      <h4>What This Communicates to Crossroads' Audience</h4>
+      <p>For the person who's been burned by hype and slick marketing — at work, at other churches, anywhere — this brand doesn't trigger that response. It doesn't ask you to be impressed. It asks you to exhale. The muted palette and editorial restraint communicate something rare: a community that's been here long enough that it doesn't need to prove itself. That's exactly what the "am I enough?" audience needs to see before they walk through the door.</p>
+      <p class="best-for" style="margin-top:12px; color:#555; font-size:13px;">Best for: print programs, donor communications, pastoral branding, welcome collateral, institutional materials, high-trust touchpoints.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══ COMPARE TAB ═══ -->
+<div id="dir-compare" class="tab-content" style="background: var(--rogue-cream);">
+  <div class="direction-panel" style="padding: 56px 48px;">
+    <div class="direction-label">Side by Side</div>
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 40px; font-weight: 900; color: var(--rogue-dark); margin-bottom: 8px;">Compare All Three</h2>
+    <p class="compare-sub">Different angles on the same truth. One brand — three ways in.</p>
+
+    <!-- Palette comparison -->
+    <div class="section-label">Color Palettes</div>
+    <div class="compare-palettes">
+      <div class="compare-block">
+        <h3>A — Rooted Warmth</h3>
+        <div class="compare-palette-strip">
+          <div class="compare-swatch" style="background:#2D5016;"></div>
+          <div class="compare-swatch" style="background:#8B4513;"></div>
+          <div class="compare-swatch" style="background:#C8A96E;"></div>
+          <div class="compare-swatch" style="background:#E8D5B0;"></div>
+          <div class="compare-swatch" style="background:#F5F0E8;"></div>
+          <div class="compare-swatch" style="background:#1C2E0F;"></div>
+        </div>
+        <p class="compare-angle">Earthy, deep, amber-warmed. Speaks to legacy and belonging. The 103-year-old brand that's still alive because it was built on something real.</p>
+      </div>
+      <div class="compare-block">
+        <h3>B — Alive & Present</h3>
+        <div class="compare-palette-strip">
+          <div class="compare-swatch" style="background:#1A6B3C;"></div>
+          <div class="compare-swatch" style="background:#F4A024;"></div>
+          <div class="compare-swatch" style="background:#E8522A;"></div>
+          <div class="compare-swatch" style="background:#4A90A4;"></div>
+          <div class="compare-swatch" style="background:#F0F4F0;"></div>
+          <div class="compare-swatch" style="background:#1A1A1A;"></div>
+        </div>
+        <p class="compare-angle">Bold, diverse, energetic. Built for visibility and instant recognition. The green becomes ownable — like Canvas Church owns theirs. 130 salvations looks like this.</p>
+      </div>
+      <div class="compare-block">
+        <h3>C — Still & Known</h3>
+        <div class="compare-palette-strip">
+          <div class="compare-swatch" style="background:#2C4A2E;"></div>
+          <div class="compare-swatch" style="background:#8FA888;"></div>
+          <div class="compare-swatch" style="background:#D4C5A9;"></div>
+          <div class="compare-swatch" style="background:#6B5B4E;"></div>
+          <div class="compare-swatch" style="background:#F7F5F2;"></div>
+          <div class="compare-swatch" style="background:#1E1E1E;"></div>
+        </div>
+        <p class="compare-angle">Quiet, editorial, permanent. Doesn't ask to be impressive. Speaks to the person who's exhausted by everything that is. Stillness as a brand strategy.</p>
+      </div>
+    </div>
+
+    <!-- Typography comparison -->
+    <div class="section-label" style="margin-top:8px;">Typography Comparison</div>
+    <table class="type-compare-table">
+      <thead>
+        <tr>
+          <th>Role</th>
+          <th>Direction A</th>
+          <th>Direction B</th>
+          <th>Direction C</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Heading</td>
+          <td>Playfair Display 900<br><em style="font-size:12px;color:#999">Authoritative serif. Historical weight.</em></td>
+          <td>Raleway 800<br><em style="font-size:12px;color:#999">Bold modern display. Energy + edge.</em></td>
+          <td>Libre Baskerville Italic<br><em style="font-size:12px;color:#999">Editorial warmth. Permanence.</em></td>
+        </tr>
+        <tr>
+          <td>Body</td>
+          <td>Lora Regular<br><em style="font-size:12px;color:#999">Humanist serif. Warm, readable.</em></td>
+          <td>DM Sans Regular<br><em style="font-size:12px;color:#999">Clean, open, no pretense.</em></td>
+          <td>DM Sans Light<br><em style="font-size:12px;color:#999">Delicate contrast to bold heading.</em></td>
+        </tr>
+        <tr>
+          <td>Accent</td>
+          <td>Space Grotesk<br><em style="font-size:12px;color:#999">Technical contrast.</em></td>
+          <td>Space Grotesk<br><em style="font-size:12px;color:#999">Precision labels.</em></td>
+          <td>Space Grotesk<br><em style="font-size:12px;color:#999">Grounding. Institutional.</em></td>
+        </tr>
+        <tr>
+          <td>Feel</td>
+          <td>Premium Heritage</td>
+          <td>High-Impact Modern</td>
+          <td>Editorial Restraint</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Strategic angle comparison -->
+    <div class="section-label">Strategic Angles</div>
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-bottom: 16px;">
+      <div style="background:white; border-radius:10px; padding:24px; box-shadow: 0 1px 8px rgba(0,0,0,0.06);">
+        <div style="font-family:'Space Grotesk',sans-serif; font-size:11px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#2D5016; margin-bottom:10px;">A — Rooted Warmth</div>
+        <p style="font-size:14px; color:#444; line-height:1.7;">The heritage play. History as strength, not baggage. Speaks to the people who need to know you've been here long enough to mean it.</p>
+      </div>
+      <div style="background:white; border-radius:10px; padding:24px; box-shadow: 0 1px 8px rgba(0,0,0,0.06);">
+        <div style="font-family:'Space Grotesk',sans-serif; font-size:11px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#1A6B3C; margin-bottom:10px;">B — Alive & Present</div>
+        <p style="font-size:14px; color:#444; line-height:1.7;">The visibility play. Own your color. Be unmistakable across town. Built for a church that's in motion and needs to look like it.</p>
+      </div>
+      <div style="background:white; border-radius:10px; padding:24px; box-shadow: 0 1px 8px rgba(0,0,0,0.06);">
+        <div style="font-family:'Space Grotesk',sans-serif; font-size:11px; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:#2C4A2E; margin-bottom:10px;">C — Still & Known</div>
+        <p style="font-size:14px; color:#444; line-height:1.7;">The trust play. Quiet confidence. The brand for people who are suspicious of brands. Let the system prove itself by not trying to prove itself.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══ NOUN LIST ═══ -->
+<div class="noun-section">
+  <div class="section-header">
+    <h2>Logo Development:<br><em>Noun List</em></h2>
+    <p>Built from your questionnaire answers using the Alan Peters / Aaron Draplin sketching method. Every noun is a potential sketch direction. Especially the unexpected ones.</p>
+  </div>
+
+  <div class="noun-grid">
+    <div class="noun-category">
+      <div class="noun-cat-label">Literal</div>
+      <ul class="noun-list">
+        <li>Crossroads</li>
+        <li>Road</li>
+        <li>Intersection</li>
+        <li>Gate</li>
+        <li>Door</li>
+        <li>Flame</li>
+        <li>River</li>
+        <li>Statesboro</li>
+        <li>Congregation</li>
+        <li>Baptism</li>
+        <li>Hands</li>
+        <li>Table</li>
+      </ul>
+    </div>
+    <div class="noun-category">
+      <div class="noun-cat-label">Conceptual</div>
+      <ul class="noun-list">
+        <li>Root</li>
+        <li>Foundation</li>
+        <li>Covenant</li>
+        <li>Shelter</li>
+        <li>Compass</li>
+        <li>Anchor</li>
+        <li>Overflow</li>
+        <li>Bridge</li>
+        <li>Horizon</li>
+        <li>Seed</li>
+        <li>Gathering</li>
+        <li>Threshold</li>
+      </ul>
+    </div>
+    <div class="noun-category">
+      <div class="noun-cat-label">Emotional</div>
+      <ul class="noun-list">
+        <li>Belonging</li>
+        <li>Warmth</li>
+        <li>Exhale</li>
+        <li>Weight</li>
+        <li>Clarity</li>
+        <li>Rest</li>
+        <li>Welcome</li>
+        <li>Momentum</li>
+        <li>Presence</li>
+        <li>Enough</li>
+      </ul>
+    </div>
+    <div class="noun-category">
+      <div class="noun-cat-label">Unexpected / Lateral ★</div>
+      <ul class="noun-list">
+        <li class="unexpected">Confluence</li>
+        <li class="unexpected">Meridian</li>
+        <li class="unexpected">Plumbline</li>
+        <li class="unexpected">Watershed</li>
+        <li class="unexpected">Lantern</li>
+        <li class="unexpected">Keystone</li>
+        <li class="unexpected">Marrow</li>
+        <li class="unexpected">Tide</li>
+        <li class="unexpected">Hearth</li>
+        <li class="unexpected">Wingspan</li>
+        <li class="unexpected">Thread</li>
+        <li class="unexpected">Lodestone</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="noun-usage-note">
+    <strong style="color: var(--rogue-lime);">How to use this list:</strong> These nouns are sketch prompts, not final concepts. Sketch each one quickly — even if it seems wrong. The goal is volume and surprise. Logo concepts almost always emerge from the Unexpected column. The word "Confluence" alone has more visual potential than the word "Crossroads." Start there.
+  </div>
+</div>
+
+<!-- ═══ SEARCH PROMPT PACK ═══ -->
+<div class="prompts-section">
+  <div class="section-header">
+    <h2>Search Prompt Pack</h2>
+    <p>Run these before the client presentation. Pull 10–20 saved images per category, then curate down to 5–7 favorites that feel like Crossroads. These should inform how we talk about direction at the meeting — not what we copy.</p>
+  </div>
+
+  <div class="prompt-grid">
+
+    <div class="prompt-card">
+      <div class="prompt-card-title">🧢 Merch Concepts</div>
+      <div class="prompt-platform">
+        <div class="prompt-platform-label">Pinterest</div>
+        <ul class="prompt-list">
+          <li>modern church apparel design minimal</li>
+          <li>faith community merch earthy palette</li>
+          <li>diverse church branded tshirt design</li>
+          <li>clean serif church hat embroidery design</li>
+          <li>nonprofit branded hoodie modern identity</li>
+        </ul>
+      </div>
+      <div class="prompt-platform">
+        <div class="prompt-platform-label">Behance</div>
+        <ul class="prompt-list">
+          <li>church brand apparel identity system</li>
+          <li>faith nonprofit merchandise design</li>
+          <li>religious community branded goods</li>
+        </ul>
+      </div>
+      <div class="prompt-platform">
+        <div class="prompt-platform-label">Dribbble</div>
+        <ul class="prompt-list">
+          <li>church merch branding concept</li>
+          <li>faith community apparel design</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="prompt-card">
+      <div class="prompt-card-title">🪧 Wayfinding / Signage</div>
+      <div class="prompt-platform">
+        <div class="prompt-platform-label">Pinterest</div>
+        <ul class="prompt-list">
+          <li>modern church interior signage warm tones</li>
+          <li>community church environmental graphics</li>
+          <li>diverse faith space wayfinding system</li>
+          <li>minimal church lobby signage design</li>
+          <li>heritage church interior brand installation</li>
+        </ul>
+      </div>
+      <div class="prompt-platform">
+        <div class="prompt-platform-label">Behance</div>
+        <ul class="prompt-list">
+          <li>church signage system brand identity</li>
+          <li>faith nonprofit environmental design</li>
+          <li>religious community wayfinding</li>
+        </ul>
+      </div>
+      <div class="prompt-platform">
+        <div class="prompt-platform-label">Dribbble</div>
+        <ul class="prompt-list">
+          <li>church interior brand system</li>
+          <li>community space environmental signage</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="prompt-card">
+      <div class="prompt-card-title">🎪 Banner Concepts</div>
+      <div class="prompt-platform">
+        <div class="prompt-platform-label">Pinterest</div>
+        <ul class="prompt-list">
+          <li>church event banner bold modern</li>
+          <li>faith community outdoor banner design</li>
+          <li>pull up banner church identity system</li>
+          <li>green church brand event display</li>
+          <li>retractable banner nonprofit warm</li>
+        </ul>
+      </div>
+      <div class="prompt-platform">
+        <div class="prompt-platform-label">Behance</div>
+        <ul class="prompt-list">
+          <li>church event display design system</li>
+          <li>faith community banner branding</li>
+        </ul>
+      </div>
+      <div class="prompt-platform">
+        <div class="prompt-platform-label">Dribbble</div>
+        <ul class="prompt-list">
+          <li>event banner church bold design</li>
+          <li>community faith event branding</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="prompt-card">
+      <div class="prompt-card-title">📄 Brochures / Collateral</div>
+      <div class="prompt-platform">
+        <div class="prompt-platform-label">Pinterest</div>
+        <ul class="prompt-list">
+          <li>church welcome brochure modern warm</li>
+          <li>faith community print collateral design</li>
+          <li>sermon series program booklet design</li>
+          <li>church bifold brochure editorial layout</li>
+          <li>nonprofit welcome guide earthy tones</li>
+        </ul>
+      </div>
+      <div class="prompt-platform">
+        <div class="prompt-platform-label">Behance</div>
+        <ul class="prompt-list">
+          <li>church print collateral brand identity</li>
+          <li>faith organization program guide design</li>
+          <li>religious nonprofit brochure</li>
+        </ul>
+      </div>
+      <div class="prompt-platform">
+        <div class="prompt-platform-label">Dribbble</div>
+        <ul class="prompt-list">
+          <li>church brochure design system</li>
+          <li>faith print collateral layout</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="prompt-card">
+      <div class="prompt-card-title">🖨️ Print Design</div>
+      <div class="prompt-platform">
+        <div class="prompt-platform-label">Pinterest</div>
+        <ul class="prompt-list">
+          <li>church sermon series poster bold green</li>
+          <li>faith community event flyer modern</li>
+          <li>church postcard mailer warm design</li>
+          <li>nonprofit outreach poster editorial</li>
+          <li>diverse community church print design</li>
+        </ul>
+      </div>
+      <div class="prompt-platform">
+        <div class="prompt-platform-label">Behance</div>
+        <ul class="prompt-list">
+          <li>church series poster identity</li>
+          <li>faith brand print campaign design</li>
+          <li>religious event poster modern</li>
+        </ul>
+      </div>
+      <div class="prompt-platform">
+        <div class="prompt-platform-label">Dribbble</div>
+        <ul class="prompt-list">
+          <li>church poster design bold</li>
+          <li>faith community print campaign</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="prompt-card">
+      <div class="prompt-card-title">📱 Digital / UI Concepts</div>
+      <div class="prompt-platform">
+        <div class="prompt-platform-label">Pinterest</div>
+        <ul class="prompt-list">
+          <li>church social media template modern</li>
+          <li>faith community Instagram template warm</li>
+          <li>church website UI clean minimal</li>
+          <li>diverse church brand digital ads</li>
+          <li>nonprofit email newsletter design modern</li>
+        </ul>
+      </div>
+      <div class="prompt-platform">
+        <div class="prompt-platform-label">Behance</div>
+        <ul class="prompt-list">
+          <li>church brand digital identity system</li>
+          <li>faith community UI web design</li>
+          <li>religious nonprofit social media system</li>
+        </ul>
+      </div>
+      <div class="prompt-platform">
+        <div class="prompt-platform-label">Dribbble</div>
+        <ul class="prompt-list">
+          <li>church app UI modern</li>
+          <li>faith brand social media template</li>
+          <li>community church website design</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-wordmark">ROGUE</div>
+  <div class="footer-url">roguestudio.co · Brand Direction Brief · Crossroads Community Church · 2026</div>
+</footer>
+
+<script>
+function showTab(id, btn) {
+  document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+  window.scrollTo({ top: document.querySelector('.tabs-wrapper').offsetTop - 20, behavior: 'smooth' });
+}
+</script>
+</body>
+</html>
